@@ -1,0 +1,344 @@
+
+body{
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+.story-image{
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap:wrap ;
+    padding: 5px 0;
+}
+ .logo{
+    width:150px;
+    height: auto;
+    
+    
+}
+.cart{
+    width:70px;
+    cursor:pointer;
+    margin-right: 50px;
+}
+nav ul {
+    color: #fff;
+    flex: 1;
+    text-align:center;
+    padding-right: 30px;
+}
+nav ul li{
+display: inline-block;
+list-style: none;
+margin: 5px 5px;
+
+font-size: 2rem;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    
+
+}
+nav ul li a::after{
+    content:'' ;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: whitesmoke;
+    transition: width 0.3s;
+  
+}
+nav ul li a:hover:after{
+    width: 50%;
+}
+.text-box{
+    color:whitesmoke;
+    position: absolute;
+    bottom: 8%;
+}
+.text-box p{
+    margin-left: 20px;
+    max-width: 100%;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+}
+.text-box h1{
+    margin-left: 20px;
+    font-size: 100px;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke:1px #fff ;
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAwlAY6GSvSTZfEhddQLjyv1jZhY0f0AD--Q&usqp=CAU) ;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position:0 0 ;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position:2000px 0 ;
+    }
+}
+h2{
+    color:whitesmoke;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-continer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+   
+}
+
+.grid-item{
+   
+    border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+    
+}
+.grid-item:hover {
+    border: 0.2vw solid gray;
+    opacity: 0.8;
+} 
+.grid-item button {
+    border: none;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+    
+    
+
+}
+.grid-item button a{
+    text-decoration: none;
+}
+.grid-item button a:visited{
+    color: whitesmoke;
+}
+
+#new{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    
+    
+   
+    text-align: center;
+}
+#explor{
+    padding: 0;
+    margin: 0;
+}
+
+.media-continer ul {
+    
+    display:flex;
+    
+    align-items: center;
+    margin: 5px;
+    padding: 05px;
+    justify-content: space-evenly;
+    
+}
+.media-continer ul li img{
+    
+    height: 50px;
+    width: 50px;
+}
+.media-continer ul li:hover{
+padding: 2px;
+border: #fff solid 2px;
+border-radius:10px;
+
+}
+
+@media (max-width:620px) 
+{
+    .story-image{
+        width: 100%;
+        height: 450px;
+        position: relative;
+       
+    }
+    .logo{
+        
+
+        
+        margin-bottom: 300px;
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+        
+    }
+    .cart{
+        margin-bottom: 300px;
+        width: 20px;
+        cursor:pointer;
+        margin-right: 20px;
+        margin-top:-2px;
+    }
+    nav ul {
+        
+        color: #fff;
+       height: 200px;
+        text-align:center;
+    }
+    nav ul li{
+    margin-top: 10px;
+    display: inline-block;
+    list-style: none;
+    margin: 15px 15px;
+    
+    font-size: 15px;
+    }
+    nav ul li a{
+        margin-bottom: 1px;
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        
+    
+    }
+    nav ul li a::after{
+        content:'' ;
+        width: 10px;
+        height: 3px;
+        position: absolute;
+        bottom: -7px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: whitesmoke;
+        transition: width 0.3s;
+      
+    }
+    nav ul li a:hover:after{
+        width: 50%;
+    }
+    .text-box{
+       height: 100px;
+        color:whitesmoke;
+        position: absolute;
+        
+    }
+    .text-box p{
+        
+       
+        max-width: 90%;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .text-box h1{
+        margin-left: 30px;
+        
+        font-size: 50px;
+        font-weight: 600;
+        color: transparent;
+        -webkit-text-stroke:1px #fff ;
+        background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAwlAY6GSvSTZfEhddQLjyv1jZhY0f0AD--Q&usqp=CAU) ;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-position:0 0 ;
+        animation: back 20s linear infinite;
+    }
+     
+    @keyframes back{
+        100%{
+            background-position:2000px 0 ;
+        }
+    }
+    video{
+        margin-top: 220px;
+    }
+    h2{
+        color:whitesmoke;
+        font-size: 20px;
+        text-align: center;
+    }
+    .grid-continer{
+        display: block;
+    }
+    
+ 
+   
+    .grid-item:hover {
+        border: 0.2vw solid gray;
+        opacity: 0.8;
+    } 
+    .grid-item button {
+        border: none;
+        
+        color: whitesmoke;
+        text-decoration: none;
+        background-color: black;
+        border-radius: 5px;
+        
+        
+    
+    }
+    .grid-item button a{
+        text-decoration: none;
+    }
+    .grid-item button a:visited{
+        color: whitesmoke;
+    }
+    
+    #new{
+       
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5rem;
+
+        text-align: center;
+    }
+    #explor{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .media-continer ul {
+        
+        display:flex;
+        
+        align-items: center;
+        margin: 5px;
+        padding: 05px;
+        justify-content: space-evenly;
+        
+    }
+    .media-continer ul li img{
+        
+        height: 30px;
+        width: 30px;
+    }
+    .media-continer ul li:hover{
+    padding: 2px;
+    border: #fff solid 2px;
+    border-radius:10px;
+    
+    }
+    }
